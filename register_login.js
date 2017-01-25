@@ -176,14 +176,3 @@ $(document).ready(function() {
         $('#myTable').html(localStorage.getItem('myTable'));
     }
 });
-
-var a = [{test: 1, a: [1,2,3,4]}, {test:2, a: [1,2]}];
-localStorage.setItem('a', JSON.stringify(a));
-if (localStorage.getItem('a')) {
-    var b = JSON.parse(localStorage.getItem('a'));
-    console.log(b);
-    console.log(typeof b);
-    b.forEach(function(val, key){
-        console.log(val, '    ', key);
-    });
-}
